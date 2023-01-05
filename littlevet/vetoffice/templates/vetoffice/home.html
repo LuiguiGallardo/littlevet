@@ -1,0 +1,14 @@
+{% extends './base.html' %}
+{% block content %}
+
+<h2 class="capitalize">
+    Welcome {{ name }}!
+</h2>
+
+<div class="center">
+    <a href="{% url 'ownerlist' %}"><button class="btn">Owners</button></a>
+    <a href="{% url 'patientlist' %}"><button class="btn">Patients</button></a>
+    <a href="{% url 'apptlist' %}"><button class="btn">Appointments</button></a>
+</div>
+
+{% endblock %}
